@@ -1,0 +1,244 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.navbar {
+    background: white;
+}
+
+.navbar-brand{
+    font-family: 'Shadows Into Light Two', cursive;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFA800;
+}
+
+.nav-link:hover {
+    text-decoration-thickness: 3px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #FFF2E3;
+}
+
+.description {
+    left: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    text-align: left;
+}
+
+header h1{
+    font-family: 'Zilla Slab', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    color: #030E49;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+header button{
+    left: 20%;
+}
+
+.wave-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wave-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*About Us Section*/
+
+
+.about-us {
+    margin: 4em auto;
+    padding: 2em;
+    position: relative;
+}
+
+.about-us-title{
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.about-us-subtitle{
+    font-weight: lighter;
+    color: #838383;
+}
+
+/*Services Section*/
+.services-deck {
+    background-color: #FFF2E3;
+    padding: 2em;
+
+}
+
+.services-deck h1 {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: 'Zilla Slab', serif;
+    color: #030E49;
+}
+
+.services-deck .row {
+    padding: 0 40px;
+    margin: 6em;
+}
+
+.card-img-top{
+    width: 80px;
+    height: 80px;
+    margin-top: 1em;
+}
+
+.services-deck .card{
+    border-radius: 20px;
+    height: 300px;
+}
+
+/*Review Section*/
+
+.review-deck{
+    background-color: white;
+    padding: 2em;
+}
+
+.review-deck .row {
+    padding: 0 40px;
+    margin: 6em;
+}
+
+.review-deck h1{
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: 'Zilla Slab', serif;
+    color: #030E49;
+}
+
+.card-footer {
+    text-align: left;
+    background-color: #FFF2E3;
+}
+
+.card-footer-child{
+    display: inline-block;
+}
+
+.card-footer-child p {
+    margin-bottom: 0;
+}
+
+.card-footer-child img{
+   margin-bottom: 25px;
+}
+
+/*signup section*/
+
+.signup-section{
+    background-color: #FFF2E3;
+    padding: 3em;
+
+}
+
+.signup-section h1{
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: 'Zilla Slab', serif;
+    color: #030E49;
+}
+
+.signup-section h5{
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: 'Zilla Slab', serif;
+    color: red;
+}
+
+.form-input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    display: block;
+    padding-top: 1em;
+}
+
+.submit{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    display: block;
+    margin-top: 1em;
+}
+
+.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.formbox{
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.access-header{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#about{
+    padding-top: 4em;
+}
+
+#services {
+    padding-top: 3em;
+}
+
+#reviews {
+    padding-top: 1.5em;
+}

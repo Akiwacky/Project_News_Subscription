@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+
+<div class="signup-section">
+
+
+    <h1 >Sign In</h1>
+
+    {% with messages = get_flashed_messages() %}
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+    {% endwith %}
+
+
+    <div class="form">
+        <form method="POST" action="{{ url_for ('login') }}">
+            {{ form.csrf_token }}
+            {{ form.username.label(class_='form-input') }} {{ form.username(class_="formbox", size=20) }}
+            {{ form.password.label(class_='form-input') }} {{ form.password(class_="formbox", size=20) }}
+            {{ form.submit(class_="btn btn-primary btn-lg submit") }}
+        </form>
+    </div>
+
+
+
+</div>
+
+
+{% include 'footer.html' %}

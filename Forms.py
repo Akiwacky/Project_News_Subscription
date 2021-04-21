@@ -10,8 +10,8 @@ class SignUpForm(FlaskForm):
     password = PasswordField('Password', validators=[InputRequired(), EqualTo('confirm',
                                                                               message="Passwords must match")])
     confirm = PasswordField('Confirm Password')
-    frequency = SelectField('Frequency', validators=[InputRequired(message="Select how frequent we should message you")],
-                            choices=[("D", "Daily"), ("W", "Weekly"), ("M", "Monthly")])
+    frequency = SelectField('Frequency', validators=[InputRequired(message="Select how frequent we should message you")
+                                                     ], choices=[("D", "Daily"), ("W", "Weekly"), ("M", "Monthly")])
     submit = SubmitField()
 
 

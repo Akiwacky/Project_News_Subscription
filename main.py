@@ -1,15 +1,14 @@
 from flask import Flask, render_template, redirect, flash, url_for
-from flask_login import LoginManager, UserMixin, login_user, current_user, logout_user, login_required
+from flask_login import LoginManager, UserMixin, login_user, current_user, logout_user
 from flask_sqlalchemy import SQLAlchemy
 from Forms import SignUpForm, LoginForm, EditForm
 from werkzeug.security import generate_password_hash, check_password_hash
-
+import pandas as pd
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Test!123ing'
 login_manager = LoginManager()
 login_manager.init_app(app)
-
 
 
 @login_manager.user_loader
@@ -28,6 +27,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(120), nullable=False)
     frequency = db.Column(db.String(1), nullable=False)
 
+
 db.create_all()
 
 
@@ -41,7 +41,7 @@ def signup():
             flash("You appear to be already signed up, maybe try to log in?")
             return redirect(url_for('login'))
 
-        hash_password = generate_password_hash(password=form.password.data,method='pbkdf2:sha256',salt_length=12)
+        hash_password = generate_password_hash(password=form.password.data, method='pbkdf2:sha256', salt_length=12)
         new_user = User(username=form.username.data, password=hash_password, frequency=form.frequency.data)
 
         db.session.add(new_user)
@@ -102,7 +102,8 @@ def logout():
 
 @app.route('/access', methods=('GET', 'POST'))
 def access():
-    return render_template('access.html', current_user=current_user)
+    articles = pd.read_csv("articles.csv")
+    return render_template('access.html', current_user=current_user, articles=articles)
 
 
 @app.route('/delete/<int:user_id>', methods=('GET', 'POST'))
@@ -136,7 +137,6 @@ def reviews():
 @app.route('/')
 def contact():
     return render_template('index.html')
-
 
 
 if __name__ == "__main__":

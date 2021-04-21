@@ -26,9 +26,7 @@
             {{ form.submit(class_="btn btn-primary btn-lg submit") }}
         </form>
     </div>
-
     {% else %}
-
     <div class="form">
         <form method="POST" action="{{ url_for ('login') }}">
             {{ form.csrf_token }}
@@ -37,16 +35,12 @@
             {{ form.submit(class_="btn btn-primary btn-lg submit") }}
         </form>
     </div>
-
      {% endif %}
 
 
 </div>
 
  {% if is_edit %}
-
  {% else %}
-
 {% include 'footer.html' %}
-
     {% endif %}

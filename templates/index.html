@@ -1,53 +1,4 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-<!--    <title>Concept By Akiwacky</title>-->
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">-->
-<!--    <link rel="stylesheet" type="text/css" href="../static/css/style.css">-->
-
-
-<!--&lt;!&ndash;    Fonts&ndash;&gt;-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
-<!--<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
-<!--<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">-->
-<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
-<!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">-->
-
-
-<!--</head>-->
-<!--<body>-->
-<!--&lt;!&ndash;NavBar Section&ndash;&gt;-->
-<!--<nav class="navbar sticky-top navbar-expand-md">-->
-<!--    <a class="navbar-brand" href="#">Concept by Akiwacky</a>-->
-<!--    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <div class="collapse navbar-collapse" id="main-navigation">-->
-<!--        <ul class="navbar-nav">-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="{{ url_for ('about', _anchor='about')}}">About</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="{{ url_for ('services', _anchor='services')}}">Services</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="{{ url_for ('reviews', _anchor='reviews')}}">Reviews</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="">Sign In</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="">Contact</a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</nav>-->
-
 {% include 'header.html' %}
-
 
 <!--Landing Page -->
 <header class="page-header header container-fluid">
@@ -63,184 +14,170 @@
 <!--About Us Section -->
 <div id="about">
 
-<div class="container about-us">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <h3 class="about-us-title">Concept By Akiwacky</h3>
-            <h5 class="about-us-subtitle">Concept for a News Subscription Service</h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ut metus dui pulvinar dignissim tellus nulla vestibulum
-                egestas. Sollicitudin tempus, velit duis gravida lorem
-                neque elit. Suspendisse sagittis eu massa augue tellus
-                tellus. Laoreet sed id pellentesque consequat scelerisque
-                congue nullam tempor. Suspendisse amet aliquet venenatis
-                massa dolor vulputate. Porttitor ut nibh consectetur
-                commodo posuere.
-            </p>
+    <div class="container about-us">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="about-us-title">Concept By Akiwacky</h3>
+                <h5 class="about-us-subtitle">Concept for a News Subscription Service</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut metus dui pulvinar dignissim tellus nulla vestibulum
+                    egestas. Sollicitudin tempus, velit duis gravida lorem
+                    neque elit. Suspendisse sagittis eu massa augue tellus
+                    tellus. Laoreet sed id pellentesque consequat scelerisque
+                    congue nullam tempor. Suspendisse amet aliquet venenatis
+                    massa dolor vulputate. Porttitor ut nibh consectetur
+                    commodo posuere.
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="../static/images/about-img.png" class="img-fluid">
+
+            </div>
+
         </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="../static/images/about-img.png" class="img-fluid">
-
-        </div>
-
     </div>
 </div>
-    </div>
 
 <!--Services Section -->
 <div id="services">
 
-<div class="services-deck">
+    <div class="services-deck">
 
-    <h1>Services</h1>
+        <h1>Services</h1>
 
-    <div class="row row-cols-lg-3 row-cols-1 g-4 text-center">
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top mx-auto d-block" src="../static/images/cryptocurrency.png" alt="Card-Image">
-                <div class="card-body">
-                    <h5 class="card-title">CRYPTOCURRENCY</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Pretium
-                        vestibulum vel lacinia tempor.</p>
+        <div class="row row-cols-lg-3 row-cols-1 g-4 text-center">
+            <div class="col">
+                <div class="card mb-3">
+                    <img class="card-img-top mx-auto d-block" src="../static/images/cryptocurrency.png" alt="Card-Image">
+                    <div class="card-body">
+                        <h5 class="card-title">CRYPTOCURRENCY</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Pretium
+                            vestibulum vel lacinia tempor.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top mx-auto d-block" src="../static/images/cloud.png" alt="Card-Image">
-                <div class="card-body">
-                    <h5 class="card-title">DIGITAL ASSETS</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Pretium
-                        vestibulum vel lacinia tempor.</p>
+            <div class="col">
+                <div class="card mb-3">
+                    <img class="card-img-top mx-auto d-block" src="../static/images/cloud.png" alt="Card-Image">
+                    <div class="card-body">
+                        <h5 class="card-title">DIGITAL ASSETS</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Pretium
+                            vestibulum vel lacinia tempor.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top mx-auto d-block" src="../static/images/smartphone-2.png" alt="Card-Image">
-                <div class="card-body">
-                    <h5 class="card-title">FINTECH</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Pretium
-                        vestibulum vel lacinia tempor.</p>
+            <div class="col">
+                <div class="card mb-3">
+                    <img class="card-img-top mx-auto d-block" src="../static/images/smartphone-2.png" alt="Card-Image">
+                    <div class="card-body">
+                        <h5 class="card-title">FINTECH</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Pretium
+                            vestibulum vel lacinia tempor.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 <!--Reviews Section-->
 <div id="reviews">
 
-<div class="review-deck">
-    <h1>Reviews</h1>
+    <div class="review-deck">
+        <h1>Reviews</h1>
 
-    <div class="row row-cols-lg-3 row-cols-1 g-4 text-center">
-        <div class="col">
+        <div class="row row-cols-lg-3 row-cols-1 g-4 text-center">
+            <div class="col">
 
-            <div class="card">
-                <div class="card border">
-                    <div class="card-body">
-                        <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-child">
-                            <img src="../static/images/pix.png" alt="Face Image">
+                <div class="card mb-3">
+                    <div class="card border">
+                        <div class="card-body">
+                            <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
                         </div>
-                        <div class="card-footer-child">
-                            <p style="width: 70px"> John Doe </p>
-                            <p>CEO, XYZ Limited</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col">
-
-            <div class="card">
-                <div class="card border">
-                    <div class="card-body">
-                        <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-child">
-                            <img src="../static/images/pix.png" alt="Face Image">
-                        </div>
-                        <div class="card-footer-child">
-                            <p style="width: 70px"> John Doe </p>
-                            <p>CEO, XYZ Limited</p>
+                        <div class="card-footer">
+                            <div class="card-footer-child">
+                                <img src="../static/images/pix.png" alt="Face Image">
+                            </div>
+                            <div class="card-footer-child">
+                                <p style="width: 70px"> John Doe </p>
+                                <p>CEO, XYZ Limited</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
+            <div class="col">
 
-        <div class="col">
-
-            <div class="card">
-                <div class="card border">
-                    <div class="card-body">
-                        <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-child">
-                            <img src="../static/images/pix.png" alt="Face Image">
+                <div class="card mb-3">
+                    <div class="card border">
+                        <div class="card-body">
+                            <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
                         </div>
-                        <div class="card-footer-child">
-                            <p style="width: 70px"> John Doe </p>
-                            <p>CEO, XYZ Limited</p>
+                        <div class="card-footer">
+                            <div class="card-footer-child">
+                                <img src="../static/images/pix.png" alt="Face Image">
+                            </div>
+                            <div class="card-footer-child">
+                                <p style="width: 70px"> John Doe </p>
+                                <p>CEO, XYZ Limited</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
+            <div class="col">
+
+                <div class="card mb-3">
+                    <div class="card border">
+                        <div class="card-body">
+                            <p class="card-text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at est in netus massa cras neque.”</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-child">
+                                <img src="../static/images/pix.png" alt="Face Image">
+                            </div>
+                            <div class="card-footer-child">
+                                <p style="width: 70px"> John Doe </p>
+                                <p>CEO, XYZ Limited</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <!--Sign Up Page -->
 <div id="signup">
-<div class="signup-section">
+    <div class="signup-section">
 
-    <h1 >Sign Up</h1>
-    {% for key, value in form.errors.items() %}
-    <h5>{{value[0]}}</h5>
-    {% endfor %}
+        <h1 >Sign Up</h1>
+        {% for key, value in form.errors.items() %}
+        <h5>{{value[0]}}</h5>
+        {% endfor %}
 
-<div class="form">
-    <form method="POST" action="{{ url_for ('signup', _anchor='signup')}}">
-    {{ form.csrf_token }}
-    {{ form.username.label(class_='form-input') }} {{ form.username(class_="formbox", size=20) }}
-        {{ form.password.label(class_='form-input') }} {{ form.password(class_="formbox", size=20) }}
-        {{ form.confirm.label(class_='form-input') }} {{ form.confirm(class_="formbox", size=20) }}
-        {{ form.frequency.label(class_='form-input') }} {{ form.frequency(class_="formbox") }}
-        {{ form.submit(class_="btn btn-primary btn-lg submit") }}
-</form>
-</div>
+        <div class="form">
+            <form method="POST" action="{{ url_for ('signup', _anchor='signup')}}">
+                {{ form.csrf_token }}
+                {{ form.username.label(class_='form-input') }} {{ form.username(class_="formbox", size=20) }}
+                {{ form.password.label(class_='form-input') }} {{ form.password(class_="formbox", size=20) }}
+                {{ form.confirm.label(class_='form-input') }} {{ form.confirm(class_="formbox", size=20) }}
+                {{ form.frequency.label(class_='form-input') }} {{ form.frequency(class_="formbox") }}
+                {{ form.submit(class_="btn btn-primary btn-lg submit") }}
+            </form>
+        </div>
 
-</div>
+    </div>
 </div>
 
 {% include 'footer.html' %}
-
-<!--Footer-->
-
-
-
-
-
-
-<!--<script src="../static/js/main.js"></script>-->
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>-->
-
-<!--</body>-->
-<!--</html>-->

@@ -22,6 +22,10 @@ class LoginForm(FlaskForm):
 
 
 class EditForm(FlaskForm):
-    username = StringField('Username')
-    frequency = SelectField('Frequency', choices=[("D", "Daily"), ("W", "Weekly"), ("M", "Monthly")])
+    username = StringField('Username', validators=[InputRequired(message="Please Add A Username"),
+                                                   length(4, 20, message="Username's length is not accurate. Minimum "
+                                                                         "length: 4, Maximum length: 20")])
+    frequency = SelectField('Frequency',
+                            validators=[InputRequired(message="Select how frequent we should message you")],
+                            choices=[("D", "Daily"), ("W", "Weekly"), ("M", "Monthly")])
     submit = SubmitField()

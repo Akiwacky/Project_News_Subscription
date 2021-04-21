@@ -1,29 +1,29 @@
-{% include 'header.html' %}
+<!--{% include 'header.html' %}-->
 
-<div class="signup-section">
-
-
-    <h1 >Edit</h1>
-
-    {% with messages = get_flashed_messages() %}
-    {% for message in messages %}
-    <h5>{{message}}</h5>
-    {% endfor %}
-    {% endwith %}
+<!--<div class="signup-section">-->
 
 
-    <div class="form">
-        <form method="POST" action="{{ url_for ('edit', user_id=current_user.id) }}">
-            {{ form.csrf_token }}
-            {{ form.username.label(class_='form-input') }} {{ form.username(class_="formbox", size=20) }}
-            {{ form.frequency.label(class_='form-input') }} {{ form.frequency(class_="formbox") }}
-            {{ form.submit(class_="btn btn-primary btn-lg submit") }}
-        </form>
-    </div>
+<!--    <h1 >Edit</h1>-->
+
+<!--    {% with messages = get_flashed_messages() %}-->
+<!--    {% for message in messages %}-->
+<!--    <h5>{{message}}</h5>-->
+<!--    {% endfor %}-->
+<!--    {% endwith %}-->
+
+
+<!--    <div class="form">-->
+<!--        <form method="POST" action="{{ url_for ('edit', user_id=current_user.id) }}">-->
+<!--            {{ form.csrf_token }}-->
+<!--            {{ form.username.label(class_='form-input') }} {{ form.username(class_="formbox", size=20) }}-->
+<!--            {{ form.frequency.label(class_='form-input') }} {{ form.frequency(class_="formbox") }}-->
+<!--            {{ form.submit(class_="btn btn-primary btn-lg submit") }}-->
+<!--        </form>-->
+<!--    </div>-->
 
 
 
-</div>
+<!--</div>-->
 
 
-{% include 'footer.html' %}
+<!--{% include 'footer.html' %}-->

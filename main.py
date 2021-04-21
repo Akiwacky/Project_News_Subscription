@@ -76,7 +76,10 @@ def login():
 @app.route("/edit/<int:user_id>", methods=('GET', 'POST'))
 def edit(user_id):
     user_to_update = User.query.get(user_id)
-    form = EditForm()
+    form = EditForm(
+        username=current_user.username,
+        frequency=current_user.frequency
+    )
 
     if form.validate_on_submit():
         user_to_update.username = form.username.data
@@ -88,7 +91,7 @@ def edit(user_id):
     else:
         print(form.errors)
 
-    return render_template('edit.html', form=form)
+    return render_template('login.html', form=form, is_edit=True)
 
 
 @app.route("/logout")
@@ -96,32 +99,18 @@ def logout():
     logout_user()
     return redirect(url_for("home"))
 
-# @app.route('/edit')
-# @login_required
-# def edit():
-#     form = EditForm()
-#     if form.validate():
-#         print("Test")
-#
-#     if form.validate_on_submit():
-#         print("Success")
-#     else:
-#         print(form.errors)
-#
-#     return render_template('edit.html', form=form)
-
 
 @app.route('/access', methods=('GET', 'POST'))
 def access():
     return render_template('access.html', current_user=current_user)
 
 
-# @app.route('/edit/<int:userid>', methods=('GET', 'POST'))
-# def delete(userid):
-#     user = User.query.get(userid)
-#     db.session.delete(user)
-#     db.session.commit()
-#     return render_template('home')
+@app.route('/delete/<int:user_id>', methods=('GET', 'POST'))
+def delete(user_id):
+    user = User.query.get(user_id)
+    db.session.delete(user)
+    db.session.commit()
+    return redirect(url_for('home'))
 
 
 @app.route('/')
@@ -141,6 +130,11 @@ def services():
 
 @app.route('/')
 def reviews():
+    return render_template('index.html')
+
+
+@app.route('/')
+def contact():
     return render_template('index.html')
 
 

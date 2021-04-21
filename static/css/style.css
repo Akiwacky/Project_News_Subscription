@@ -170,7 +170,6 @@ header button{
 .signup-section{
     background-color: #FFF2E3;
     padding: 3em;
-
 }
 
 .signup-section h1{
@@ -185,6 +184,11 @@ header button{
     margin-bottom: 1em;
     font-family: 'Zilla Slab', serif;
     color: red;
+}
+
+.signup-section .form{
+    padding-bottom: 6em;
+
 }
 
 .form-input {
@@ -231,6 +235,12 @@ form
     margin-left: 2rem;
 }
 
+.page-footer{
+    background-color: #FFFFFF;
+    padding: 5rem;
+}
+
+
 #about{
     padding-top: 4em;
 }
@@ -240,5 +250,9 @@ form
 }
 
 #reviews {
+    padding-top: 1.5em;
+}
+
+#signup {
     padding-top: 1.5em;
 }

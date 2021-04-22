@@ -5,9 +5,9 @@
     <h1>Welcome {{ current_user.username }}!</h1>
     {% endif %}
 
-    <a class="btn btn-secondary" href="{{url_for('logout')}}" type="button" >Logout</a>
-    <a class="btn btn-info" href="{{url_for('edit', user_id=current_user.id)}}" type="button">Edit Data</a>
-    <a class="btn btn-danger" href="{{url_for('delete', user_id=current_user.id)}}" type="button">Delete Account</a>
+    <a class="btn btn-secondary" href="{{url_for('logout')}}" role="button" >Logout</a>
+    <a class="btn btn-info" href="{{url_for('edit', user_id=current_user.id)}}" role="button">Edit Data</a>
+    <a class="btn btn-danger" href="{{url_for('delete', user_id=current_user.id)}}" role="button">Delete Account</a>
 </div>
 
 <div class="news-container">

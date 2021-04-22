@@ -7,7 +7,6 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 
-
 app = Flask(__name__)
 load_dotenv()
 app.config['SECRET_KEY'] = os.environ.get("S_KEY")
@@ -20,7 +19,11 @@ def load_user(user_id):
     return User.query.get(user_id)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+uri = os.getenv("DATABASE_URL")
+if uri.startswith("postgres://"):
+    uri = uri.replace("postgres://", "postgresql://", 1)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

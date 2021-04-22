@@ -4,10 +4,12 @@ from flask_sqlalchemy import SQLAlchemy
 from Forms import SignUpForm, LoginForm, EditForm
 from werkzeug.security import generate_password_hash, check_password_hash
 import pandas as pd
+from dotenv import load_dotenv
 import os
 
 
 app = Flask(__name__)
+load_dotenv()
 app.config['SECRET_KEY'] = os.environ.get("S_KEY")
 login_manager = LoginManager()
 login_manager.init_app(app)

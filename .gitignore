@@ -1,4 +1,4 @@
 venv
-.env
 __pycache__/Forms.cpython-39.pyc
 .idea
+.env

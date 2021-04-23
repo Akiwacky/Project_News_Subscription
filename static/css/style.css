@@ -110,11 +110,6 @@ header button{
     color: #030E49;
 }
 
-/*.services-deck .row {*/
-/*    !*padding: 2.5rem;*!*/
-/*    !*margin: 6rem;*!*/
-/*}*/
-
 .card-img-top{
     width: 80px;
     height: 80px;
@@ -135,11 +130,6 @@ header button{
     background-color: white;
     padding: 2rem;
 }
-
-/*.review-deck .row {*/
-/*    padding: 0 2.5rem;*/
-/*    margin: 6rem;*/
-/*}*/
 
 .review-deck h1{
     margin-left: 2rem;
@@ -162,7 +152,7 @@ header button{
 }
 
 .card-footer-child img{
-   margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 #reviews {
@@ -264,8 +254,7 @@ form {
     padding-top: 1rem;
 }
 
-@media (min-width: 375px)
-and (max-width: 812px) {
+@media (max-width: 1024px) {
 
     .description {
         left: 0;
@@ -276,8 +265,8 @@ and (max-width: 812px) {
         text-align: center;
     }
 
-    .wave-two{
-        height: 149px;
+    .wave-two {
+        display: none;
     }
 
     .about-us-title{
@@ -288,34 +277,23 @@ and (max-width: 812px) {
         text-align: center;
     }
 
-    /*.services-deck {*/
-    /*    left: 0;*/
-    /*    padding: 0;*/
-    /*}*/
-
-      .services-deck .row{
+    .services-deck .row{
         padding: 0 0 2em 0;
     }
 
-      .services-deck h1 {
-          padding-top: 2em;
-      }
+    .services-deck h1 {
+        padding-top: 2em;
+    }
 
-    /*.review-deck {*/
-    /*    left: 0;*/
-    /*    padding: 0;*/
-    /*}*/
-
-      .review-deck .row{
+    .review-deck .row{
         padding: 0 0 2em 0;
     }
 
-      .review-deck h1 {
-          padding-top: 2em;
-      }
+    .review-deck h1 {
+        padding-top: 2em;
+    }
 
 }
-
 
 
 

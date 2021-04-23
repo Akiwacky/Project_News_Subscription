@@ -272,7 +272,6 @@ form {
     font-size: 3rem;
     color: #030E49;
 }
-
     header p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -286,6 +285,10 @@ form {
     .wave-one {
         display: none;
     }
+
+    #about{
+    padding-top: 4.25rem;
+}
 
 }
 

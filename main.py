@@ -19,7 +19,7 @@ def load_user(user_id):
     return User.query.get(user_id)
 
 
-uri = os.getenv("DATABASE_URL")
+uri = os.getenv("DATABASE_URL", "sqlite:///crypto.db")
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 

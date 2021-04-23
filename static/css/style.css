@@ -110,10 +110,10 @@ header button{
     color: #030E49;
 }
 
-.services-deck .row {
-    padding: 2.5rem;
-    margin: 6rem;
-}
+/*.services-deck .row {*/
+/*    !*padding: 2.5rem;*!*/
+/*    !*margin: 6rem;*!*/
+/*}*/
 
 .card-img-top{
     width: 80px;
@@ -136,10 +136,10 @@ header button{
     padding: 2rem;
 }
 
-.review-deck .row {
-    padding: 0 2.5rem;
-    margin: 6rem;
-}
+/*.review-deck .row {*/
+/*    padding: 0 2.5rem;*/
+/*    margin: 6rem;*/
+/*}*/
 
 .review-deck h1{
     margin-left: 2rem;
@@ -264,7 +264,8 @@ form {
     padding-top: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 375px)
+and (max-width: 812px) {
 
     .description {
         left: 0;
@@ -275,6 +276,10 @@ form {
         text-align: center;
     }
 
+    .wave-two{
+        height: 149px;
+    }
+
     .about-us-title{
         text-align: center;
     }
@@ -283,10 +288,10 @@ form {
         text-align: center;
     }
 
-    .services-deck {
-        left: 0;
-        padding: 0;
-    }
+    /*.services-deck {*/
+    /*    left: 0;*/
+    /*    padding: 0;*/
+    /*}*/
 
       .services-deck .row{
         padding: 0 0 2em 0;
@@ -296,10 +301,10 @@ form {
           padding-top: 2em;
       }
 
-    .review-deck {
-        left: 0;
-        padding: 0;
-    }
+    /*.review-deck {*/
+    /*    left: 0;*/
+    /*    padding: 0;*/
+    /*}*/
 
       .review-deck .row{
         padding: 0 0 2em 0;

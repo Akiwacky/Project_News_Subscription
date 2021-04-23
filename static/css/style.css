@@ -254,6 +254,42 @@ form {
     padding-top: 1rem;
 }
 
+@media (max-width: 812px) {
+
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 5%;
+        transform: none;
+        text-align: center;
+    }
+
+    header h1{
+    font-family: 'Zilla Slab', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #030E49;
+}
+
+    header p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: .75rem;
+}
+    .wave-two {
+        display: none;
+    }
+
+    .wave-one {
+        display: none;
+    }
+
+}
+
+
 @media (max-width: 1024px) {
 
     .description {
@@ -268,6 +304,7 @@ form {
     .wave-two {
         display: none;
     }
+
 
     .about-us-title{
         text-align: center;

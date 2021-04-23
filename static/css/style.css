@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+    padding-top: 65px;
     margin: 0;
     background: white;
 }
@@ -256,15 +256,6 @@ form {
 
 @media (max-width: 812px) {
 
-    .description {
-        left: 0;
-        padding: 0 15px;
-        position: absolute;
-        top: 15%;
-        transform: none;
-        text-align: center;
-    }
-
     header h1{
     font-family: 'Zilla Slab', serif;
     font-style: normal;
@@ -295,7 +286,7 @@ form {
         left: 0;
         padding: 0 15px;
         position: absolute;
-        top: 30%;
+        top: 10%;
         transform: none;
         text-align: center;
     }

@@ -260,7 +260,7 @@ form {
         left: 0;
         padding: 0 15px;
         position: absolute;
-        top: 5%;
+        top: 15%;
         transform: none;
         text-align: center;
     }
@@ -295,7 +295,7 @@ form {
         left: 0;
         padding: 0 15px;
         position: absolute;
-        top: 10%;
+        top: 30%;
         transform: none;
         text-align: center;
     }
